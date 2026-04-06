@@ -1,0 +1,8 @@
+<h2>승인 대기 사용자</h2>
+
+{% for user in users %}
+<form method="post">
+  {{user[0]}}
+  <button name="id" value="{{user[0]}}">승인</button>
+</form>
+{% endfor %}
