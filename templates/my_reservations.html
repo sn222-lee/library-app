@@ -1,0 +1,21 @@
+<h2>내 예약 목록</h2>
+<p>{{ user }}님의 예약 내역</p>
+
+<table border="1">
+  <tr>
+    <th>PC 번호</th>
+    <th>날짜</th>
+    <th>시간</th>
+  </tr>
+  {% for row in rows %}
+  <tr>
+    <td>{{ row[0] }}</td>
+    <td>{{ row[1] }}</td>
+    <td>{{ row[2] }}</td>
+  </tr>
+  {% endfor %}
+</table>
+
+<br>
+<a href="/reserve">예약 페이지로 돌아가기</a><br>
+<a href="/logout">로그아웃</a>
